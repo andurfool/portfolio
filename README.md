@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Современное Портфолио
 
-## Getting Started
+Современный сайт-портфолио с анимациями и стильным дизайном в черно-бело-красной цветовой гамме.
 
-First, run the development server:
+## Особенности
 
+- 🚀 Разработан с использованием Next.js и TypeScript
+- 💅 Стилизация с помощью Tailwind CSS
+- 🎭 Плавные анимации с Framer Motion
+- 📱 Полностью адаптивный дизайн
+- 🌙 Современный черно-бело-красный дизайн
+- 🔍 SEO-оптимизированный код
+
+## Секции
+
+- 🏠 Главная (Hero)
+- 👤 Обо мне
+- 🛠️ Навыки
+- 💼 Проекты
+- 📞 Контакты
+
+## Технологии
+
+- [Next.js](https://nextjs.org/) - React фреймворк
+- [TypeScript](https://www.typescriptlang.org/) - Типизированный JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS фреймворк
+- [Framer Motion](https://www.framer.com/motion/) - Библиотека для анимаций
+
+## Начало работы
+
+### Предварительные требования
+
+- Node.js (версия 18 или выше)
+- npm или yarn
+
+### Установка
+
+1. Клонируйте репозиторий:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установите зависимости:
+```bash
+npm install
+# или
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Запустите проект в режиме разработки:
+```bash
+npm run dev
+# или
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Откройте [http://localhost:3000](http://localhost:3000) в вашем браузере.
 
-## Learn More
+## Настройка
 
-To learn more about Next.js, take a look at the following resources:
+### Персонализация
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Замените "Ваше Имя" на ваше имя в компонентах
+2. Обновите информацию о навыках и проектах
+3. Добавьте свои контактные данные
+4. Замените заглушки изображений на ваши собственные фотографии
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Изменение цветовой схемы
 
-## Deploy on Vercel
+Цветовая схема определена в файле `tailwind.config.ts`. Вы можете изменить основные цвета:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```typescript
+colors: {
+  primary: "#FF0000", // Красный
+  dark: "#000000",    // Черный
+  light: "#FFFFFF",   // Белый
+  "primary-light": "#FF3333", // Светло-красный
+  "primary-dark": "#CC0000",  // Темно-красный
+},
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Сборка для продакшена
+
+```bash
+npm run build
+# или
+yarn build
+```
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT.
