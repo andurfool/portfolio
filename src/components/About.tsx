@@ -262,7 +262,7 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h5 className="text-red font-bold mb-2">Образование</h5>
-                  <p className="text-gray-300">ГАПОУ "ЧПК", Информационные системы и программирование</p>
+                  <p className="text-gray-300">ГАПОУ &quot;ЧПК&quot;, Информационные системы и программирование</p>
                   <p className="text-gray-400 text-sm">2021-2025</p>
                 </div>
                 
@@ -310,6 +310,20 @@ export default function About() {
               <p className="text-gray-400">Проектирование и реализация эффективных и безопасных API для веб-приложений.</p>
             </div>
           </motion.div>
+          
+          <div className="mt-8">
+            <h5 className="text-red font-bold mb-4">Навыки</h5>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h6 className="text-white font-medium mb-2">Веб-разработка</h6>
+                <p className="text-gray-300">HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Express, MongoDB, SQL</p>
+              </div>
+              <div>
+                <h6 className="text-white font-medium mb-2">Дизайн</h6>
+                <p className="text-gray-300">Figma, Adobe Photoshop, UI/UX дизайн, адаптивный дизайн</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
