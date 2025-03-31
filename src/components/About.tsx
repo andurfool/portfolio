@@ -127,7 +127,7 @@ export default function About() {
                           transition={{ delay: 1.5, duration: 0.5 }}
                         >
                           <div>
-                            <span className="text-green-400">name</span><span className="text-white">:</span> <span className="text-yellow-300">'Никита'</span><span className="text-white">,</span>
+                            <span className="text-green-400">name</span><span className="text-white">:</span> <span className="text-yellow-300">&quot;Никита&quot;</span><span className="text-white">,</span>
                           </div>
                           
                           <motion.div 
@@ -142,7 +142,7 @@ export default function About() {
                               animate={{ opacity: 1 }}
                               transition={{ delay: 2.5, duration: 0.3 }}
                             >
-                              'React'
+                              &quot;React&quot;
                             </motion.span>
                             <span className="text-white">,</span> 
                             <motion.span 
@@ -151,7 +151,7 @@ export default function About() {
                               animate={{ opacity: 1 }}
                               transition={{ delay: 2.8, duration: 0.3 }}
                             >
-                              'NextJS'
+                              &quot;NextJS&quot;
                             </motion.span>
                             <span className="text-white">,</span> 
                             <motion.span 
@@ -160,17 +160,27 @@ export default function About() {
                               animate={{ opacity: 1 }}
                               transition={{ delay: 3.1, duration: 0.3 }}
                             >
-                              'UI/UX'
+                              &quot;UI/UX&quot;
                             </motion.span>
                             <span className="text-orange-400">]</span><span className="text-white">,</span>
                           </motion.div>
                           
-                          <motion.div 
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                          <motion.div
+                            className="flex items-center text-sm"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 3.0, duration: 0.5 }}
+                          >
+                            <span className="text-green-400">education</span><span className="text-white">:</span> <span className="text-yellow-300">&quot;Computer Science&quot;</span><span className="text-white">,</span>
+                          </motion.div>
+                          
+                          <motion.div
+                            className="flex items-center text-sm"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 3.5, duration: 0.5 }}
                           >
-                            <span className="text-green-400">passion</span><span className="text-white">:</span> <span className="text-yellow-300">'Creating amazing web experiences'</span>
+                            <span className="text-green-400">passion</span><span className="text-white">:</span> <span className="text-yellow-300">&quot;Creating amazing web experiences&quot;</span>
                           </motion.div>
                         </motion.div>
                         
@@ -237,10 +247,10 @@ export default function About() {
             <motion.div variants={itemVariants}>
               <h4 className="text-2xl font-bold mb-4">Веб-разработчик и дизайнер</h4>
               
-              <p className="text-gray-300 mb-6">
-                Я специализируюсь на создании современных веб-приложений с использованием 
-                передовых технологий. Мой подход сочетает в себе креативный дизайн и 
-                техническую экспертизу для создания уникальных цифровых решений.
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Я - frontend разработчик с опытом в создании отзывчивых веб-приложений с использованием 
+                современных технологий. Мой подход сочетает креативный дизайн с эффективной разработкой 
+                для создания интуитивно понятных и производительных пользовательских интерфейсов.
               </p>
               
               <p className="text-gray-300 mb-8">

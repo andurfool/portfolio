@@ -14,7 +14,6 @@ export default function Contact() {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState('');
   
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -228,12 +227,6 @@ export default function Contact() {
                 {submitSuccess && (
                   <div className="bg-green-500/20 border border-green-500/50 text-green-400 px-4 py-3 rounded-md">
                     Ваше сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.
-                  </div>
-                )}
-                
-                {submitError && (
-                  <div className="bg-red-500/20 border border-red-500/50 text-red-400 px-4 py-3 rounded-md">
-                    {submitError}
                   </div>
                 )}
               </form>

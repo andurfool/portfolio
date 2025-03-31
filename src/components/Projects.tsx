@@ -2,7 +2,6 @@
 
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef, useState, useCallback } from 'react';
-import Image from 'next/image';
 
 // Данные о проектах
 const projects = [

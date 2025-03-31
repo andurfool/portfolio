@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Hero() {
   const [randomValues, setRandomValues] = useState<{
